@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    background-color: #151718;
+}
+
+/* head starts */
+header{
+    background-color: #ced4da;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: #212529;
+}
+
+a{
+    text-decoration: none;
+}
+
+#logo{
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+#menu li{
+    padding: 10px;
+}
+
+#social li{
+    padding: 10px;
+}
+/* head ends */
+
+/* main starts */
+.intro{
+    display: flex;
+    flex-direction: auto;
+}
+.intro img{
+    width: auto;
+    height: 400px;
+    margin-left: 100px;
+}
+.intro h3{
+    color: white;
+    font-family: 'Antic Slab', serif;
+    margin-left: 50px;
+    margin-top: 150px;
+}
+
+.serviceContainer{
+    display: flex;
+    /* flex-wrap: wrap; */
+    color: white;
+    justify-content: space-between;
+}
+
+.servicebox{
+    border: 1px solid lightgray;
+    /* flex-basis: 32%; */
+    max-width: 370px;
+    padding: 10px;
+}
+.servicebox img{
+    width: 100%;
+}
+
+hr{
+    width: 450px;
+}
+
+#h{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer{
+    display: flex;
+    background-color: white;
+}
+footer #line{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+footer h4{
+    margin-left: 20px;
+    margin-top: 12px;
+    color: #151718;
+}
+
+@media screen and (max-width: 900px){
+  header{
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .intro{
+    flex-direction: column;
+  }
+  footer h4{
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  hr{
+    width: 250px;
+  }
+  .im img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+  }
+  #logo{
+    order: -1;
+  }
+  .inf h3{
+      margin-top: -10px;
+      font-size: 25px;
+  }
+}
+
+@media screen and (max-width:450px){
+    .inf h3{
+        margin-left: 15px;
+        margin-top: -5px;
+    }
+}
